@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    color: rgb(237, 49, 68);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+h3 {
+    color: #555;
+}
+
+div {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ol, ul {
+    /* list-style: none; */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+iframe, video, audio {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+ audio {
+    width: 100%;
+}
+
+audio {
+    margin-top: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Add more styles based on your needs */

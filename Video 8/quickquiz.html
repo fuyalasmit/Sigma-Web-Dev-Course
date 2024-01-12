@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertically Aligned Form</title>
+</head>
+<body>
+    <form action="post">
+        <h1 style=" color: rgb(92, 176, 250) ; ">Name, City & Pincode</h1>
+        
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" autocapitalize="words" style="background-color: rgb(214, 214, 214);">
+        </div>
+            <!-- div,h1 are block element
+            label,input are inline,  -->
+        <div>
+            <label for="city">Choose city within Kathmandu Valley:</label>
+            <select name="City" id="city">
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Lalitpur">Lalitpur</option>
+                <option value="Bhaktapur">Bhaktapur</option>
+            </select>
+        </div>
+        <div>
+            <label for="pw">Enter your Pincode:</label>
+            <input style="background-color: rgb(214, 214, 214);" type="number" name="password" id="pw">
+        </div>
+
+    </form>
+</body>
+</html>
+
+
