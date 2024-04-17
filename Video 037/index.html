@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Exercise 5 for Sigma Web Dev">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: aqua;
+        }
+        ::selection {
+            color: white;
+            background-color: black;
+        }
+        nav{
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        nav ul {
+            border-bottom: 1px solid;
+            background-color: aqua;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            padding: 0px 7% 0px 7%;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        /* @media screen and (max-width:333px) {
+            nav ul {
+                flex-direction: column;
+            }
+            .one,.two{
+                position: relative;
+                top:30%;
+            }
+        } */
+
+        main {
+            border: 1px solid;
+            border-top: 0px;
+            background-color: rgb(193, 191, 189);
+            height: 70vmin;
+        }
+
+        .one,
+        .two {
+            border: 1px solid aqua;
+            width: 40%;
+            height: 63vmin;
+            margin-left: 4%;
+            background-color: skyblue;
+        }
+
+        .one {
+            position: absolute;
+            top: 40px;
+        }
+
+        .two {
+            position: absolute;
+            left: 50%;
+            top: 40px;
+        }
+        .one,.two{
+            overflow-y: auto;
+        }
+        .three{
+            text-align: center;
+            padding: 20px 0px 20px 0px;
+        }
+        .three span{
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 1px 10px 1px 10px;
+        }
+        .three p{
+            padding-top: 15px;
+        }
+        footer{
+            border-top: 1px solid;
+            background-color: aliceblue;
+            text-align: center;
+            position: fixed;
+            bottom: 0px;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+        footer p{
+            padding: 0 5% 1px 5%;
+        }
+        figure img{
+            height: 40px;
+            position: fixed;
+            bottom: 17px;
+            right: -3px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </nav>
+    <div>
+        <main>
+            <div class="one">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quam, et maxime vitae sequi odit eos eius explicabo veritatis officia mollitia neque, sunt vel, nam ex? Aliquam praesentium inventore nihil corrupti, debitis quibusdam vero exercitationem nam quia quisquam animi placeat ex non itaque magni provident deleniti laborum facere qui iure error commodi. Fugiat maiores, deleniti totam laborum doloremque rerum rem vero blanditiis consequuntur facilis? Pariatur officiis iste quibusdam tempora! Similique ullam placeat a pariatur quaerat qui porro neque, illo maiores iure molestiae cumque in rerum non iste officia nihil dignissimos cupiditate! Dolor suscipit veritatis ipsa, fugiat quidem iusto incidunt consequatur, architecto culpa, eum dignissimos placeat. Optio obcaecati quam distinctio. Tempora quod deleniti, ipsa aut vitae explicabo aspernatur accusamus quos eos sunt necessitatibus distinctio, autem dolore dignissimos unde nobis consequatur perferendis sit esse inventore. Tempore, soluta. Fugit nostrum mollitia ratione hic qui, fuga totam, esse repellat quam, odit laudantium officia? Placeat corrupti eius, omnis quis fugiat impedit et quod vero voluptatem doloribus, ipsum ex, aspernatur quasi expedita. Debitis perferendis repellendus, expedita quod dicta velit qui voluptate fugit repellat blanditiis vitae laborum, nisi ab. Facilis dolore vitae praesentium illum veritatis aliquid minus rerum eos ipsa, animi tenetur. Dolores nam sapiente quos accusamus.</p>
+            </div>
+            <div class="two">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facere minima, quas dolores incidunt rem quam ducimus unde quae amet reprehenderit maiores deleniti cum veritatis voluptate qui sunt soluta culpa commodi. Tempore dolore, recusandae earum voluptates beatae delectus voluptatum assumenda iure. Autem beatae fugit aperiam sint ipsam odit doloribus, vitae ipsa quia architecto non pariatur suscipit laborum assumenda sed cum dignissimos officiis neque veniam ipsum illum. Atque nobis saepe assumenda sapiente praesentium expedita eligendi sit iusto, veniam fugit, illum alias iure ipsa molestias. Et, quam laborum quia quaerat facere dolorem magni voluptate nemo delectus impedit cumque velit dolorum modi voluptates culpa deserunt praesentium facilis nisi illum quasi error unde. Corporis earum corrupti unde repudiandae minima voluptates ad voluptate quisquam assumenda labore, nam sit dolorum laudantium, tempora, obcaecati officiis et molestiae commodi soluta dolorem debitis ratione. Expedita, nesciunt? Exercitationem inventore obcaecati sequi? Earum, veritatis exercitationem qui laboriosam iusto magni eaque rerum, reiciendis incidunt eius dolorem odio fuga consequatur debitis ipsam beatae eos maiores eveniet omnis modi, iste possimus vel excepturi. Minus tenetur totam provident ratione cum dolore voluptatum corrupti dolorem doloribus debitis praesentium veniam doloremque reprehenderit veritatis atque similique cupiditate ut, corporis distinctio voluptatibus neque sequi! Repellendus tempora recusandae expedita tempore.</p>
+            </div>
+        </main>
+    </div>
+    <section class="three">
+        <span>
+            Welcome to Sigma Web Development Course, haha!
+        </span>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos nam distinctio illo aliquid soluta unde dolorum perspiciatis aperiam repudiandae excepturi ipsa totam ratione iste ducimus explicabo, officiis inventore, natus accusantium? Recusandae eos magnam tempore voluptas necessitatibus vel dolorum ducimus dolorem quos consectetur assumenda, repellendus voluptatibus ullam impedit odio. Assumenda repudiandae odit illum labore, magni tempora laboriosam, eveniet voluptates minus aut ratione delectus culpa fugiat sint iste impedit dignissimos nobis consectetur voluptatum, blanditiis quo neque corporis quam? Ex ea quo animi magnam est, quidem obcaecati totam expedita suscipit natus id. Tempora ipsa, distinctio et temporibus maxime nulla dolores neque non consequatur vitae facilis? Quisquam quibusdam officia numquam pariatur? Consequatur nostrum et excepturi magni itaque placeat odio, nam reprehenderit dicta adipisci blanditiis, cupiditate exercitationem quae mollitia obcaecati officiis rerum dolor fuga laudantium recusandae quos dolorum inventore voluptas necessitatibus. Architecto, dignissimos aut repellat facilis unde nisi ullam molestias provident accusamus assumenda eos, sapiente esse nam impedit officiis laborum! Porro ad aliquam magni velit eum modi sapiente, repellendus necessitatibus perspiciatis itaque eaque incidunt. Sed totam praesentium esse debitis labore natus provident quasi facilis adipisci odio rerum tempore delectus hic vero magnam laudantium quae, amet accusantium. Veritatis aut suscipit, autem repellat, quia sit eaque laborum qui eos voluptate ea. Soluta natus facilis excepturi provident, nihil iure impedit iste iusto dolor, vero assumenda architecto eum inventore nisi accusamus consequuntur odio voluptatum incidunt animi obcaecati eaque quibusdam fugiat. Dolore, ipsum nostrum molestias quibusdam itaque recusandae blanditiis a doloribus inventore eaque, facilis numquam suscipit sit quaerat eius hic? Voluptatum cum voluptas maxime veritatis eum necessitatibus culpa, accusantium quam quasi aspernatur! Iure illo quasi vel ut perspiciatis ratione itaque, id odit, laboriosam maxime perferendis sequi voluptatem provident expedita minima at, laborum doloribus dolorem delectus libero dolor sapiente! Ipsam eum dolore iure magni ut ipsum itaque assumenda repellendus iste quibusdam deserunt libero voluptates reprehenderit asperiores reiciendis molestiae nam autem animi atque, error voluptatem temporibus mollitia? Provident, totam ratione veritatis earum sit soluta sequi corporis harum. Officia ad consequuntur dolores culpa temporibus esse repellendus aspernatur corporis natus recusandae beatae quo ex quasi est in delectus consectetur voluptatem non tempora ullam, provident quod, pariatur ipsam? Numquam dicta quisquam libero. Ipsum, aut in vel eligendi esse, modi hic similique amet est veritatis dolores animi libero! Illo perferendis, laboriosam porro iusto delectus error ipsum optio corporis asperiores ipsam necessitatibus doloribus. Velit, tempore dolor nulla atque nobis nemo, nesciunt, et quo quis architecto magni consequatur.
+        </p>
+    </section>
+    <footer>
+        <p>Author: Asmit Phuyal</p>
+        <p><a href="mailto:asmitphuyal@gmail.com">Mail: asmitphuyal@gmail.com</a></p>
+    </footer>
+    <figure>
+        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png" alt="Subscribe">
+    </figure>
+</body>
+
+</html>

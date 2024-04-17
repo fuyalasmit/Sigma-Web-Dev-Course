@@ -1,0 +1,10 @@
+nav ul li{
+    list-style-type: devanagari;
+    background-color: aqua;
+    list-style-position: inside;
+    border: 2px solid black;
+    list-style-type: "🌝" ;
+    /* list-style: disc inside url(https://www.truecable.com/cdn/shop/articles/etl-vs-ul-blog-img-sm.png?v=1556210211) ; */
+    /* list-style-image: url(https://www.truecable.com/cdn/shop/articles/etl-vs-ul-blog-img-sm.png?v=1556210211); */
+    
+}

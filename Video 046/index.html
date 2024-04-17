@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container{
+            background-color: rebeccapurple;
+            height: 80vh;
+            width: 30vw;
+        }
+        .box{
+            /* background-color:antiquewhite; */
+            width: 34px;
+            height: 45px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            
+            /* animation-name: asmit;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: cubic-bezier(0.02, 0.2, 0.15, 0.5);
+            animation-delay: 2s;
+            animation-direction: alternate;
+            animation-play-state: running;
+            animation-fill-mode: both; */
+
+            animation: asmit 2s ease-in-out 3s 4,
+                       asmit2 3s ease-in-out 3s 4;
+        }
+
+        @keyframes asmit {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform: translateX(100px) translateY(50px);
+            }
+        }
+
+        @keyframes asmit2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(340deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

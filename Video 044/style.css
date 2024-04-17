@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.logo {  
+}
+
+.logo img{
+    width: 180px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Segoe UI";
+    padding-top: 9px;
+}
+
+.right ul {
+    display: flex;
+    gap: 34px;
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+}
+.right ul li svg{
+    padding-top: 5px;
+    width: 15px;
+}
+a:link{
+    text-decoration: none;
+}
+a{
+    color: inherit;
+}
+
+.download{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border: 2px solid; */
+    /* position: absolute; */
+    /* padding-left: 13vw; */
+    /* padding-right: 13vw; */
+    gap: 3vw;
+    padding-top: 10vh;
+    max-width: 70vw;
+    margin: auto;
+}
+
+.file{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color:rgb(228, 255, 255);
+    /* box-shadow: 1px 1px 1px 1px; */
+    gap: 3%;
+}
+
+.lang{
+    /* background-color: red; */
+    grid-column: 1/3;
+    box-sizing: border-box;
+    /* padding: 10px; */
+    margin: 2%;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.small{
+    /* background-color: rgb(224, 185, 185); */
+    grid-column: 1/3;
+    font-size: 0.8em;
+    box-sizing: border-box;
+    /* margin: px; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* margin-bottom: 5px; */
+}
+.down1{
+    color: white;
+    grid-column: 1/2;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8em;
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 5px;
+}
+.down2{
+    color: white;
+    grid-column: 2/3;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8em;
+    border-radius: 7px;
+    margin-top: 5px;
+}

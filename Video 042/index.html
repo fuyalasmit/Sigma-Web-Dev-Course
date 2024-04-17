@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform</title>
+  <style>
+    .box{
+      height: 50px;
+      width: 50px;
+      background-color: beige;
+      border: 2px solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* transform-origin: 0%;    */
+      /* by default 50% 50% hunxa */
+      /* transform: rotate(40deg); */
+      /* transform: rotate(0.35turn); */
+      /* transform: rotateX(40deg); */
+      /* transform: rotateY(40deg); */
+      /* transform: rotateZ(40deg); */
+      /* transform: scalex(0.8); */
+      /* transform: skewy(30deg); */
+      
+      transform: translate(100%, 100%);
+      /* transform: translate(20%) skew(10deg); */
+    }
+    .container{
+      width: 100vw;
+      height: 80vh;
+      border: 2px solid purple;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      box
+    </div>
+  </div>
+</body>
+</html>

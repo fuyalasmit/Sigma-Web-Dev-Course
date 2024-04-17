@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+
+        :root{
+            --bgnav:aqua; 
+            --bgcontainer:rgb(154, 226, 226);
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        nav {
+            background-color: var(--bgnav);
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        ul li {
+            padding: 0px 33px 0px 33px
+        }
+
+        ul li:first-child{
+            --local: grey;
+            background-color:var(--local);
+        }
+
+        div {
+            background-color: var(--bgcontainer);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo quam cum ad ipsa
+        dolorem. Quasi laudantium voluptate veritatis? Pariatur beatae repellendus maxime esse quasi modi! Ipsum culpa
+        atque esse modi aut dolorem sit consectetur ea alias voluptas dignissimos reprehenderit at, eos itaque! Magnam,
+        nam? </div>
+</body>
+
+</html>

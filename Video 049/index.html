@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit n Position</title>
+    <style>
+        .container{
+            width: 366px;
+            height: 488px;
+            border: 2px solid black;
+            background-color: aqua;
+            background-image: url("https://img.freepik.com/premium-photoclose-up-stuffed-animal-wearing-pink-coat-generative-ai_900958-1576.jpg");
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-clip: border-box;
+        }
+        .container img{
+            width: 366px;
+            height: 488px;
+            /* object-fit: contain; */
+            object-fit: cover;
+            object-position: bottom left;
+
+            object-fit: fill;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://img.freepik.com/premium-photo/close-up-stuffed-animal-wearing-pink-coat-generative-ai_900958-1576.jpg" alt=""> -->
+        
+    </div>
+</body>
+</html>
