@@ -18,3 +18,4 @@ console.log("Your number is "+ a );
 
 document.title=("New title using js");
 document.body.style.backgroundColor=("red");
+// .
