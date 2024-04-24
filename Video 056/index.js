@@ -13,7 +13,6 @@ else{
     console.log("You cannnot vote");
 }
 
-
 // let a;
 // a=3**3;
 // console.log(a);
