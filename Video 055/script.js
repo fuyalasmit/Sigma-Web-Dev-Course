@@ -35,3 +35,4 @@ let o={
 console.log(o);
 o.salary="100Cr";  
 console.log(o);
+// .
