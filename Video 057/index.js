@@ -14,12 +14,13 @@ let obj = {
 
 for (const key in obj) {
     console.log(key);
+    console.log(obj[key]);
 }
 
 
-for (const char of "Asmit") {
-    console.log(char);
-}
+// for (const char of "Asmit") {
+//     console.log(char);
+// }
 
 // let i=3;
 // while (i<6) {
@@ -27,8 +28,9 @@ for (const char of "Asmit") {
 //     i++;
 // }
 
-let i=3;
-do {
-    console.log(i);
-    i++;
-} while (i<6);
+
+// let i=3;
+// do {
+//     console.log(i);
+//     i++;
+// } while (i<6);
