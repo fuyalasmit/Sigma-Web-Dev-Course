@@ -29,5 +29,5 @@ e.insertAdjacentHTML("afterbegin", " I am asmit. <b> hi </b>")
 // document.querySelector(".box").remove();
 console.log(document.querySelector(".box").classList);
 console.log(document.querySelector(".box").className);
-document.querySelector(".box").classList.add("HI");  //single time add garna milxa not everytime
+document.querySelector(".box").classList.add("HI");  //single time add garna milxa not everytime.
 console.log(document.querySelector(".box").className);
