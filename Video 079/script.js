@@ -3,6 +3,11 @@ let b = parseInt(prompt("Enter another number: "));
 
 if (isNaN(a) || isNaN(b)) {
     throw new Error("Only integers are allowed."); // error throw garyo vane ehi aayera rokinxa
+    // InternalError
+    // RangeError
+    // ReferenceError
+    // SyntaxError
+    // TypeError
 }
 
 let sum = a + b;
