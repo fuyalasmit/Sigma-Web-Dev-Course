@@ -5,7 +5,6 @@ let text = [
     "Sending all passwords and personal files to server",
     "Cleaning up"
 ]
-
 const randomDelay = () => {
     return new Promise((resolve, reject) => {
         let timeout = 1 + 6 * Math.random();
@@ -14,14 +13,12 @@ const randomDelay = () => {
         }, timeout * 1000);
     })
 }
-
 const addItem = async (item) => {
     await randomDelay();
     let div = document.createElement("div");
     div.innerHTML = item;
     document.body.append(div);
 }
-
 (async function main() {
 
     let t = setInterval(() => {
@@ -38,7 +35,6 @@ const addItem = async (item) => {
     for (const item of text) {
         await addItem(item);
     }
-
     await randomDelay();
     clearInterval(t);
 })();
