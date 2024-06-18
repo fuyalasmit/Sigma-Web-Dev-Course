@@ -8,30 +8,42 @@
 </head>
 <body>
     <script>
-        // let password =  prompt("Enter Password");
+        let password =  prompt("Enter Password: ");
+        // let password = "asmit76A"
+        console.log(password);
         function passwordValidator(){
-            if(password.length>7){
-                if()
+            if(password.length>7 == true && upperLowerCheck()==true && digitCheck()==true ){
+                    return true;
             }
         }
+
+        let count1=0,count2=0;
         function upperLowerCheck(){
             for (let i of password) {
-                // if()
+                if(i>='a' && i<= 'z'){
+                    count1++;                 
+                }
+                if(i>='A' && i<= 'Z'){
+                    count2++;                 
+                }
+            }
+            if(count1>0 && count2>0){
+                return true;
             }
         }
         function digitCheck(){
-            for (let i of password) {
-                if(i<=0 || i>=9){
-                    return true;
+            for (let d of password) {
+                if(d>=0 && d<=9){
+                    return true;                    
                 }
             }
         }
-        // if(passwordValidator==true){
-        //     console.log("Good Password Choice");
-        // }
-        // else{
-        //     alert("Password must be least 8 characters long, contains both uppercase and lowercase letters, and includes at least one digit.");
-        // }
+        if(passwordValidator()==true){
+            console.log("Good Password Choice");
+        }
+        else{
+            console.log("Password must be least 8 characters long, contains both uppercase and lowercase letters, and includes at least one digit.");
+        }
     </script>
 </body>
 </html>
