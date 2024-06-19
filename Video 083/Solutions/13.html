@@ -1,0 +1,31 @@
+<!-- The Shopping Cart Totalizer: You are working on an e-commerce website, and you need to calculate the total cost of items in the shopping cart. Implement a function named calculateTotal that takes an array of products with prices and quantities and returns the total cost. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Totalizer</title>
+</head>
+
+<body>
+    <script>
+        // Array of product objects with prices and quantities
+        let cart = [
+            { "name": "apple", "price": 1.2, "quantity": 5 },
+            { "name": "banana", "price": 0.5, "quantity": 10 },
+            { "name": "orange", "price": 0.8, "quantity": 3 }
+        ];
+
+        // Function to calculate the total cost of items in the shopping cart
+        function calculateTotal(cart) {
+            return cart.reduce((total, item) => {
+                return total + item.price * item.quantity;
+            }, 0);
+        }
+        
+        // Example usage
+        let totalCost = calculateTotal(cart);
+        console.log("Total cost:", totalCost); // Output the total cost
+    </script>
+</body>
+</html>
